@@ -1,0 +1,25 @@
+{
+  "name": "tallerexpress",
+  "version": "1.0.0",
+  "description": "Taller Express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlonsoGtzV/TallerNodeJS.git"
+  },
+  "keywords": [
+    "node.js"
+  ],
+  "author": "Alonso Gutierrez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlonsoGtzV/TallerNodeJS/issues"
+  },
+  "homepage": "https://github.com/AlonsoGtzV/TallerNodeJS#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
