@@ -1,13 +1,16 @@
-const express = require('express')
+const express = require('express');
+const app = express();
+const PORT = 2000;
 
-const app = express()
+app.get('/', (req, res) => {
+  res.send(`Hello world from Port ${PORT}`);
+});
 
-const port = 3000
+app.get('/myname', (req, res) => {
+  const name = 'Alonso Gutierrez';
+  res.send(`Hello World! My name is ${name}.`);
+});
 
-app.get('/', (req,res) =>{
-    res.send(`Hello world from Port ${port}`)
-})
-
-app.listen(3000, ()=>{
-    console.info(`server is running on port ${port}`)
-})
+app.listen(PORT, () => {
+  console.info(`Servidor corriendo en http://localhost:${PORT}`);
+});
